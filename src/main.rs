@@ -8,10 +8,10 @@ async fn main() {
         let mut a = true;
         
         if x <= 1.0 {a = true;} 
-        else if x >= 1000.0 {a = false;}
+        else if x >= 10000.0 {a = false;}
 
-        if a{x+=10.0;}
-        else{x-=10.0;}
+        if a{x+=100.0;}
+        else{x-=100.0;}
         
         draw_rectangle(x, x, 300.0, 300.0, Color::from_hex(0x34AD34));
         next_frame().await; // BU JUDA MUHIM!
